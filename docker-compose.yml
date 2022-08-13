@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  ml-inference:
+    build: .
+    container_name: ml-inference
+    volumes:
+      - .:/code
+    ports:
+      - "5004:80"
